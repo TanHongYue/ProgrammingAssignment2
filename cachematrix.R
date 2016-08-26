@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Creating two functions here, makeMatrix and cacheSolve. makeMatrix helps to calculate the inverse of a matrix,
+## which needs to be inputed as an argument. cacheSolve checks if the inverse of a matrix has already been calculated
+## in makeMatrix - if the inverse of a matrix has already been calculated, cacheSolve will cache the value, otherwise,
+## it will compute the inverse of the matrix.
 
-## Write a short comment describing this function
+## Within makeMatrix, there are 4 functions set(), get(), setInverse(), getInverse().
 makeMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
