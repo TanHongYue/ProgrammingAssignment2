@@ -3,7 +3,9 @@
 ## in makeMatrix - if the inverse of a matrix has already been calculated, cacheSolve will cache the value, otherwise,
 ## it will compute the inverse of the matrix.
 
-## Within makeMatrix, there are 4 functions set(), get(), setInverse(), getInverse().
+## Within makeMatrix, objects x and inv are initialised and there are 4 functions created: 
+## set(), get(), setInverse(), getInverse(). "Getters" and "Setters" are typical behaviours of an object-oriented program.
+## The 4 functions are stored as a list within makeMatrix. 
 makeMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
