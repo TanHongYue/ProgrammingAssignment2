@@ -23,7 +23,9 @@ makeMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
+## cacheSolve checks if the inverse of a matrix has already been calculated in makeMatrix - 
+## if the inverse of a matrix has already been calculated, cacheSolve will cache the value and 
+## the message "getting cached data" will be reflected, otherwise, it will compute the inverse of the matrix.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
